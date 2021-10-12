@@ -10,6 +10,7 @@ import MarketScreen from '../screens/MarketScreen';
 import PortfolioScreen from '../screens/PortfolioScreen';
 import RankingsScreen from '../screens/RankingsScreen';
 import { RootTabParamList, RootTabScreenProps } from '../types';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
 export default function BottomTabNavigator() {
@@ -65,7 +66,7 @@ export default function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Profile"
-        component={PortfolioScreen}
+        component={ProfileScreen}
         options={{
           tabBarIcon: ({ color }) => <FontAwesome name="user" size={13} color={color} />,
         }}
